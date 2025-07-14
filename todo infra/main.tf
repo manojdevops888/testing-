@@ -18,6 +18,10 @@ module "resource_group" {
 }
 module "resource_group" {
   source = "../MODULE/RESOURCE_GROUP"
+  rg_details_name = "ziddi-rg3"
+  rg_details_location = "westus"
+}
+{
   rg_details_name = "ziddi-rg2"
   rg_details_location = "westus"
 }
