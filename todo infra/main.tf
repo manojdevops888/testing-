@@ -16,7 +16,11 @@ module "resource_group" {
   rg_details_name = "ziddi-rg1"
   rg_details_location = "westus"
 }
-
+module "resource_group" {
+  source = "../MODULE/RESOURCE_GROUP"
+  rg_details_name = "ziddi-rg3"
+  rg_details_location = "westus"
+}
 module "virtual_network_name" {
 
 depends_on = [ module.resource_group ]
